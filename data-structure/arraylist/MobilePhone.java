@@ -9,6 +9,10 @@ public class MobilePhone {
         this.myContacts = new ArrayList<Contact>();
     }
 
+    public String getMyNumber() {
+        return this.myNumber;
+    }
+
     // Helper function to find the index of a contact,
     // taking an Contact object as a parameter
     private int findContact(Contact contact) {

@@ -6,6 +6,7 @@ public class MobilePhoneMain {
 
   private static void startPhone() {
     System.out.println("Starting phone...");
+    System.out.println("Your contact No: " + mobilePhone.getMyNumber());
   }
 
   private static void printActions() {
