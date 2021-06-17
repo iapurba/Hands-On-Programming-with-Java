@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hands-On-Programming-with-Java.iml" filepath="$PROJECT_DIR$/Hands-On-Programming-with-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-structure/data-structure.iml" filepath="$PROJECT_DIR$/data-structure/data-structure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-types/data-types.iml" filepath="$PROJECT_DIR$/data-types/data-types.iml" />
+    </modules>
+  </component>
+</project>

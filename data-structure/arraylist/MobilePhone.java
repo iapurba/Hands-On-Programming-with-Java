@@ -9,6 +9,24 @@ public class MobilePhone {
         this.myContacts = new ArrayList<Contact>();
     }
 
+    // Helper function to find the index of a contact,
+    // taking an Contact object as a parameter
+    private int findContact(Contact contact) {
+        return this.myContacts.indexOf(contact);
+    }
+
+    // Overloaded
+    // Helper function to find the index of an existed contact
+    private int findContact(String contactName) {
+        for (int i = 0; i < this.myContacts.size(); i++) {
+            Contact contact = this.myContacts.get(i);
+            if (contact.getName().equals(contactName)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public boolean addNewContact(Contact contact) {
         if (findContact(contact.getName()) >= 0) {
             System.out.println("Contact already exists.");
@@ -40,24 +58,21 @@ public class MobilePhone {
         return true;
     }
 
-    private int findContact(Contact contact) {
-        return this.myContacts.indexOf(contact);
+    // This time it takes a contact name and return a Contact object
+    public Contact queryContact(String contactName) {
+        int foundPos = findContact(contactName);
+        if (foundPos < 0) {
+            return null;
+        }
+        return this.myContacts.get(foundPos);
     }
 
-    private int findContact(String contactName) {
-        for (int i=0; i < this.myContacts.size(); i++) {
-            Contact contact = this.myContacts.get(i);
-            if (contact.getName().equals(contactName)) {
-                return i;
-            }
+    // Print the list of all contacts 
+    public void printContacts() {
+        System.out.println("Contact list");
+        for (int i = 0; i < this.myContacts.size(); i++) {
+            Contact currentContact = this.myContacts.get(i);
+            System.out.println(i + 1 + ". " + currentContact.getName() + ":" + currentContact.getPhoneNo());
         }
-        return -1;
-    }
-
-    public String queryContact(Contact contact) {
-        if (findContact(contact) >= 0) {
-            return contact.getName();
-        }
-        return null;
     }
 }
