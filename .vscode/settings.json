@@ -1,6 +1,7 @@
 {
   "java.project.sourcePaths": [
+    "data-structure/linkedlist",
     "data-structure/arraylist",
-    "data-structure/linkedlist"
+    "interfaces"
   ]
 }
