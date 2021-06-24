@@ -6,9 +6,9 @@ public class QuickSort {
     if (left < right) {
       int partitionIndex = getPartitionIndex(array, left, right);
 
-      // Recursively call left and right subarray to the partitionIndex 
-      quickSort(array, left, partitionIndex-1);
-      quickSort(array, partitionIndex+1, right);
+      // Recursively call left and right subarray to the partitionIndex
+      quickSort(array, left, partitionIndex - 1);
+      quickSort(array, partitionIndex + 1, right);
     }
     return array;
   }
@@ -19,10 +19,10 @@ public class QuickSort {
     // Select right most value as pivot
     int pivot = array[right];
     int i = left;
-    
+
     // Rearrange the array such that,
-    // Elements smaller than the pivot are at left to the pivot 
-    // Element greater than the pivot are at right to the pivot 
+    // Elements smaller than the pivot are at left to the pivot
+    // Element greater than the pivot are at right to the pivot
     for (int j = i; j < right; j++) {
       if (array[j] < pivot) {
         swap(array, i, j);
@@ -33,7 +33,7 @@ public class QuickSort {
     return i;
   }
 
-  // Helper method to swap to elements 
+  // Helper method to swap to elements
   public static void swap(int[] array, int i, int j) {
     int temp = array[i];
     array[i] = array[j];
@@ -41,9 +41,10 @@ public class QuickSort {
   }
 
   public static void main(String[] args) {
-    int[] nums = {5, 6, 1, 3, 2, 4, 9, 8, 7};
 
-    int[] sortedNums = quickSort(nums, 0, nums.length-1);
+    int[] nums = { 5, 6, 1, 3, 2, 4, 9, 8, 4, 1, 7 };
+
+    int[] sortedNums = quickSort(nums, 0, nums.length - 1);
 
     System.out.println(Arrays.toString(sortedNums));
   }
