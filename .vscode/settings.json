@@ -1,7 +1,13 @@
 {
   "java.project.sourcePaths": [
+    "interfaces",
+    "inner-class",
+    "generics",
     "data-structure/linkedlist",
     "data-structure/arraylist",
-    "interfaces"
+    "algorithms/sorting",
+    "algorithms/searching",
+    "abstract-classes",
+    "data-structure/tree"
   ]
 }
