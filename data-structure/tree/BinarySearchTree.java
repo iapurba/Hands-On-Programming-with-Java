@@ -41,6 +41,51 @@ public class BinarySearchTree {
     return root;
   }
 
+  // Delete a key 
+  public void delete(int key) {
+    deleteNode(this.root, key);
+  }
+
+  // Helper function to delete a node recursively 
+  private Node deleteNode(Node root, int key) {
+    // Return if the tree is empty 
+    if (root == null) {
+      return root;
+    }
+    // Find which node to be deleted 
+    if (key < root.key) {
+      root.left = deleteNode(root.left, key);
+    } else if (key > root.key) {
+      root.right = deleteNode(root.right, key);
+    } else {
+      // If the node has one or no child 
+      if (root.left == null) {
+        return root.right;
+      } else if (root.right == null) {
+        return root.left;
+      }
+
+      // If the tree has both left and right children, 
+      // Find the inroder successor key, 
+      // Replace the node key with inorder successor key 
+      root.key = getSmallestChildValue(root.right);
+
+      // Delete inroder successor node
+      root.right = deleteNode(root.right, root.key);
+    }
+    return root;
+  }
+
+  // Helper method to find the smallest child of a node
+  private int getSmallestChildValue(Node root) {
+    int minValue = root.key;
+    while (root.left != null) {
+      minValue = root.left.key;
+      root = root.left;
+    }
+    return minValue;
+  }
+
   public Node getRoot() {
     System.out.println(this.root.key);
     return this.root;

@@ -28,5 +28,10 @@ public class BSTMain {
     tree.inroder();
     System.out.println("Depth first traversal - postorder: ");
     tree.postorder();
+
+    tree.delete(8);
+    tree.delete(5);
+    tree.delete(14);
+    tree.inroder();
   }
 }
