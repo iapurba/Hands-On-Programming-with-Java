@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Player implements ISaveable{
+public class Gamer implements ISaveable{
   private String name;
   private int hitPoints;
   private int strength;
   private String weapon;
 
-  public Player(String name, int hitPoints, int strength, String weapon) {
+  public Gamer(String name, int hitPoints, int strength, String weapon) {
     this.name = name;
     this.hitPoints = hitPoints;
     this.strength = strength;
@@ -72,7 +72,7 @@ public class Player implements ISaveable{
 
   @Override
   public String toString() {
-    return "Player {" + "name='" + name + '\'' + ", hitpoints=" + hitPoints +
+    return "Gamer {" + "name='" + name + '\'' + ", hitpoints=" + hitPoints +
       ", strength=" + strength + ", weapon='" + weapon + '\'' + "}";
   }
 

@@ -48,7 +48,7 @@ public class Main {
 
   // Main method
   public static void main(String[] args) {
-    Player nick = new Player("Nick", 1, 2, "sowrd");
+    Gamer nick = new Gamer("Nick", 1, 2, "sowrd");
     System.out.println(nick);
 
     saveObject(nick);
