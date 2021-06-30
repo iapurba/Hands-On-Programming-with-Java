@@ -3,11 +3,12 @@
     "interfaces",
     "inner-class",
     "generics",
+    "data-structure/tree",
     "data-structure/linkedlist",
     "data-structure/arraylist",
     "algorithms/sorting",
     "algorithms/searching",
     "abstract-classes",
-    "data-structure/tree"
+    "data-structure/heap"
   ]
 }
