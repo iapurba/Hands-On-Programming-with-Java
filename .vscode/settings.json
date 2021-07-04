@@ -7,9 +7,10 @@
     "data-structure/linkedlist",
     "data-structure/heap",
     "data-structure/arraylist",
+    "daily-programming-challange",
     "algorithms/sorting",
     "algorithms/searching",
     "abstract-classes",
-    "daily-programming-challange"
+    "io-operations"
   ]
 }
