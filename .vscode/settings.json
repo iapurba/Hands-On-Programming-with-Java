@@ -1,5 +1,6 @@
 {
   "java.project.sourcePaths": [
+    "io-operations",
     "interfaces",
     "inner-class",
     "generics",
@@ -11,6 +12,6 @@
     "algorithms/sorting",
     "algorithms/searching",
     "abstract-classes",
-    "io-operations"
+    "dynamic-programming"
   ]
 }
