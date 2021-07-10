@@ -79,12 +79,12 @@ public class DCP8CountUnivalSubtree {
     System.out.println(countUnivalSubtree(root));
 
     // Tree representation
-    // 0
-    // / \
-    // 1 0
-    // / \
-    // 1 0
-    // / \
-    // 1 1
+    //   0
+    //  / \
+    // 1   0
+    //    / \
+    //   1   0
+    //  / \
+    // 1   1
   }
 }
